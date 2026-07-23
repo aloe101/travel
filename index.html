@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2026年8月初昆明—大理—丽江—香格里拉10天全程自由行攻略，含逐日行程、交通、住宿、美食、预约、雨季与高原准备。"/>
+  <title>2026年8月初｜昆明—大理—丽江—香格里拉 10天全程自由行</title>
+  <style>
+    :root{
+      --ink:#243036;
+      --muted:#66747b;
+      --paper:#fbfaf6;
+      --card:#ffffff;
+      --accent:#b85c38;
+      --accent2:#2f7d72;
+      --gold:#c49344;
+      --line:#e6e1d8;
+      --danger:#b23a48;
+      --safe:#2d7a46;
+      --shadow:0 14px 40px rgba(45,44,39,.10);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(196,147,68,.11), transparent 24rem),
+        radial-gradient(circle at 92% 18%, rgba(47,125,114,.10), transparent 25rem),
+        var(--paper);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      line-height:1.72;
+    }
+    a{color:var(--accent2);text-underline-offset:3px}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    .wrap{width:min(1160px,calc(100% - 32px));margin:auto}
+    .hero{
+      min-height:86vh;
+      display:grid;
+      place-items:center;
+      position:relative;
+      overflow:hidden;
+      color:white;
+      background:
+        linear-gradient(90deg,rgba(14,28,30,.84),rgba(14,28,30,.35)),
+        url("https://loremflickr.com/1800/1100/yunnan,mountain,lake?lock=19") center/cover no-repeat;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:auto 0 0;height:180px;
+      background:linear-gradient(transparent,var(--paper));
+    }
+    .hero-content{position:relative;z-index:1;padding:90px 0 130px}
+    .eyebrow{
+      display:inline-flex;gap:.55rem;align-items:center;
+      padding:.45rem .75rem;border:1px solid rgba(255,255,255,.4);
+      border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);
+      font-size:.9rem;letter-spacing:.08em
+    }
+    h1{font-size:clamp(2.35rem,6vw,5.4rem);line-height:1.06;margin:.8rem 0 1rem;max-width:1000px}
+    .hero p{font-size:clamp(1rem,2vw,1.3rem);max-width:850px;color:rgba(255,255,255,.9)}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+    .badge{padding:.55rem .85rem;border-radius:999px;background:rgba(255,255,255,.15);backdrop-filter:blur(7px)}
+    nav{
+      position:sticky;top:0;z-index:30;background:rgba(251,250,246,.92);
+      backdrop-filter:blur(12px);border-bottom:1px solid var(--line)
+    }
+    .nav-inner{display:flex;gap:1rem;overflow:auto;padding:.7rem 0;white-space:nowrap}
+    .nav-inner a{text-decoration:none;color:var(--ink);font-size:.92rem;padding:.35rem .55rem;border-radius:8px}
+    .nav-inner a:hover{background:#eee9df}
+    section{padding:72px 0}
+    h2{font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.2;margin:0 0 12px}
+    h3{font-size:1.35rem;margin:0 0 .55rem}
+    .lead{font-size:1.08rem;color:var(--muted);max-width:900px}
+    .grid{display:grid;gap:22px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);overflow:hidden
+    }
+    .card-body{padding:22px}
+    .callout{padding:20px 22px;border-radius:16px;border-left:5px solid var(--accent2);background:#eef7f4}
+    .callout.warn{border-color:var(--danger);background:#fff1f3}
+    .callout.gold{border-color:var(--gold);background:#fff8e8}
+    .route-strip{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px
+    }
+    .route-stop{background:white;border:1px solid var(--line);border-radius:15px;padding:16px;text-align:center}
+    .route-stop b{display:block;font-size:1.05rem}
+    .route-stop small{color:var(--muted)}
+    .day{
+      margin:28px 0;background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;
+      box-shadow:var(--shadow)
+    }
+    .day-head{
+      display:grid;grid-template-columns:160px 1fr;align-items:stretch;
+      background:linear-gradient(120deg,#243b3d,#376b65);color:white
+    }
+    .day-no{display:grid;place-items:center;padding:26px;font-size:2.25rem;font-weight:800;border-right:1px solid rgba(255,255,255,.2)}
+    .day-title{padding:22px 26px}
+    .day-title p{margin:.3rem 0 0;color:rgba(255,255,255,.82)}
+    .day-content{padding:24px}
+    .timeline{position:relative;margin-left:9px;padding-left:28px;border-left:2px dashed #d8d1c5}
+    .time-row{position:relative;margin:0 0 22px}
+    .time-row::before{
+      content:"";position:absolute;left:-35px;top:.45rem;width:12px;height:12px;border-radius:50%;
+      background:var(--accent);box-shadow:0 0 0 5px #f7e9e2
+    }
+    .time{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+    .spot{
+      display:grid;grid-template-columns:minmax(240px,36%) 1fr;gap:0;
+      margin:22px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff
+    }
+    .spot-photo{min-height:250px;position:relative;background:linear-gradient(145deg,#d7e5e0,#eadbc5)}
+    .spot-photo::after{
+      content:attr(data-caption);position:absolute;left:12px;bottom:10px;
+      background:rgba(20,30,30,.72);color:white;padding:.35rem .6rem;border-radius:8px;font-size:.82rem
+    }
+    .spot-body{padding:20px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin:.7rem 0}
+    .tag{font-size:.82rem;background:#f1eee7;border:1px solid #e4ded3;padding:.26rem .55rem;border-radius:999px}
+    .tag.book{background:#fff1dd;border-color:#f1c98c;color:#8b570d}
+    .tag.risk{background:#ffecee;border-color:#efb7be;color:#992938}
+    .tag.free{background:#eaf7ee;border-color:#b8dfc3;color:#23633a}
+    .food-list,.checklist{display:grid;gap:10px;padding:0;list-style:none}
+    .food-list li,.checklist li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+    .checklist input{margin-right:10px;transform:scale(1.15)}
+    table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{background:#f3efe7}
+    tr:last-child td{border-bottom:0}
+    .pill{display:inline-block;font-size:.8rem;padding:.22rem .48rem;border-radius:999px;background:#ece8df}
+    .print-btn{
+      position:fixed;right:18px;bottom:18px;z-index:50;border:0;border-radius:999px;
+      padding:13px 17px;background:var(--accent);color:#fff;font-weight:700;box-shadow:var(--shadow);cursor:pointer
+    }
+    .footnotes{font-size:.9rem;color:var(--muted)}
+    footer{padding:40px 0 80px;border-top:1px solid var(--line);color:var(--muted)}
+    @media(max-width:820px){
+      .grid-2,.grid-3,.route-strip{grid-template-columns:1fr}
+      .day-head{grid-template-columns:1fr}
+      .day-no{border-right:0;border-bottom:1px solid rgba(255,255,255,.2);padding:10px}
+      .spot{grid-template-columns:1fr}
+      .spot-photo{min-height:220px}
+      th,td{font-size:.9rem;padding:10px}
+    }
+    @media print{
+      nav,.print-btn{display:none}
+      .hero{min-height:auto;color:#111;background:none}
+      .hero::after{display:none}
+      .hero-content{padding:20px 0}
+      .hero p,.eyebrow,.badge{color:#333;border-color:#aaa;background:none}
+      section{padding:25px 0}
+      .day,.card{box-shadow:none;break-inside:avoid}
+      .spot{break-inside:avoid}
+      body{background:white}
+    }
+  </style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">打印 / 保存PDF</button>
+
+<header class="hero">
+  <div class="wrap hero-content">
+    <span class="eyebrow">2026年8月初 · 雨季弹性版 · 全程不跟团不租车</span>
+    <h1>昆明—大理—丽江—香格里拉<br>10天全程自由行攻略</h1>
+    <p>以动车、地铁、公交、景区直通车和正规网约车为主。包含逐日时间表、景点图片、特色美食、住宿区域、预约清单、雨季改线、高原准备和行李方案。</p>
+    <div class="hero-badges">
+      <span class="badge">建议：10天9晚</span>
+      <span class="badge">海拔逐步上升</span>
+      <span class="badge">虎跳峡为天气备选</span>
+      <span class="badge">玉龙雪山预留机动日</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#overview">总览</a>
+    <a href="#booking">预约清单</a>
+    <a href="#itinerary">逐日行程</a>
+    <a href="#food">特色美食</a>
+    <a href="#hotel">住宿区域</a>
+    <a href="#packing">装备清单</a>
+    <a href="#weather">雨季与高原</a>
+    <a href="#budget">预算</a>
+    <a href="#sources">核验渠道</a>
+  </div>
+</nav>
+
+<main>
+<section id="overview">
+  <div class="wrap">
+    <h2>路线总览与核心原则</h2>
+    <p class="lead">这条路线最适合“城市完全自由行 + 山区景点购买单纯交通接驳”的方式。2026年8月初仍在云南主汛期，户外项目不要全部锁死；虎跳峡必须根据临近天气和景区公告决定。</p>
+
+    <div class="route-strip">
+      <div class="route-stop"><b>昆明 2晚</b><small>城市适应 · 地铁方便</small></div>
+      <div class="route-stop"><b>大理 2晚</b><small>洱海西岸 · 喜洲</small></div>
+      <div class="route-stop"><b>丽江 3晚</b><small>雪山机动日 · 古镇</small></div>
+      <div class="route-stop"><b>香格里拉 2晚</b><small>高原慢游 · 动车返昆</small></div>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:24px">
+      <article class="card"><div class="card-body"><h3>城际交通</h3><p>昆明→大理、大理→丽江、丽江→香格里拉、香格里拉→昆明均优先使用铁路。暑运热门白天车次应在12306开售后尽快购买，并开启候补。</p></div></article>
+      <article class="card"><div class="card-body"><h3>山区景点</h3><p>玉龙雪山使用官方票务与直通车；普达措使用景区直通车；虎跳峡只在天气稳定、道路正常、景区开放时临时执行。</p></div></article>
+      <article class="card"><div class="card-body"><h3>行程弹性</h3><p>丽江保留两个完整白天，让玉龙雪山与白沙/束河互换。香格里拉不要把普达措和返昆动车压在同一天。</p></div></article>
+    </div>
+
+    <div class="callout warn" style="margin-top:22px">
+      <strong>8月雨季底线：</strong>若虎跳峡前24—48小时有持续强降雨、暴雨预警、地质灾害风险预警、道路管制或景区部分关闭，直接取消，改乘动车从丽江前往香格里拉。不要安排中虎跳、高路徒步或雨后峡谷徒步。
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap">
+    <h2>所有需要提前预约、购买与确认的项目</h2>
+    <p class="lead">价格、开放区域与放票时间可能随天气、客流和运营安排变化。下表用于确定优先级，最终以出行日期对应的官方页面与12306为准。</p>
+    <div style="overflow:auto">
+      <table>
+        <thead><tr><th>优先级</th><th>项目</th><th>建议时间</th><th>操作重点</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill">最高</span></td><td>往返云南大交通</td><td>确定日期立即</td><td>尽量选择可退改票价；避免抵达昆明当天直接衔接长途动车。</td></tr>
+          <tr><td><span class="pill">最高</span></td><td>香格里拉→昆明动车</td><td>12306开售即买</td><td>这是最难临时替代的一段；无直达票时分段“香格里拉→丽江→昆明”，预留至少1.5—2小时。</td></tr>
+          <tr><td><span class="pill">最高</span></td><td>丽江→香格里拉动车</td><td>开售即买</td><td>优先保证铁路转场；不要依赖雨季公路临时拼车。</td></tr>
+          <tr><td><span class="pill">最高</span></td><td>玉龙雪山冰川公园索道</td><td>按官方放票规则抢票</td><td>景区门票、环保车、索道可能是不同票项；核对姓名、身份证、乘坐时段及退改。</td></tr>
+          <tr><td><span class="pill">高</span></td><td>昆明→大理、大理→丽江动车</td><td>开售即买</td><td>优先白天车次，避免过早或过晚影响酒店入住与行李。</td></tr>
+          <tr><td><span class="pill">高</span></td><td>普达措门票＋直通车</td><td>提前3—7天</td><td>确认上车点、返程时间、是否含景区交通；返程不要安排极限赶车。</td></tr>
+          <tr><td><span class="pill">中</span></td><td>松赞林寺、木府等</td><td>提前1—3天或当天</td><td>确认开放日、入园时段与实名要求。</td></tr>
+          <tr><td><span class="pill">临近决定</span></td><td>虎跳峡</td><td>前一天</td><td>查看景区公告、逐小时天气、地质灾害预警和道路情况；只选成熟的上虎跳区域。</td></tr>
+          <tr><td><span class="pill">提前确认</span></td><td>酒店接送与行李可达性</td><td>订房后</td><td>询问车辆能否到门口、是否爬坡、是否有电梯、最近下客点、雨天行李接驳。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="itinerary">
+<div class="wrap">
+  <h2>10天9晚逐日详尽行程</h2>
+  <p class="lead">时间为舒适型参考，不要求机械执行。山地天气、排队和交通会产生波动，凡涉及动车、索道和直通车，请以票面时间倒推。</p>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D1</div><div class="day-title"><h3>抵达昆明：翠湖—讲武堂—昆明老街</h3><p>住宿：东风广场 / 南屏街 / 昆明老街附近</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">抵达后</div><p>乘地铁或正规网约车前往酒店。当天不安排远郊景点，先适应约1900米海拔并整理行李。</p></div>
+        <div class="time-row"><div class="time">15:00–16:20</div><p>翠湖公园慢走，沿湖游览，不必绕行所有支路。</p></div>
+        <div class="time-row"><div class="time">16:20–17:20</div><p>云南陆军讲武堂旧址；如遇闭馆，则改逛文林街与文化巷。</p></div>
+        <div class="time-row"><div class="time">18:00–20:30</div><p>昆明老街—钱王街—南屏街—南强街，完成第一顿云南特色晚餐。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="翠湖公园 · 昆明">
+          <img src="https://loremflickr.com/1200/800/kunming,lake,park?lock=101" alt="昆明翠湖公园示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>翠湖公园</h3><div class="tags"><span class="tag free">免费</span><span class="tag">1–1.5小时</span><span class="tag">轻松步行</span></div><p>适合抵达日恢复体力。8月以湖景、树荫和城市生活氛围为主；冬季才是红嘴鸥旺季。</p><p><strong>拍照：</strong>湖边拱桥、荷塘、林荫步道。<br><strong>雨天：</strong>小雨可逛，大雨缩短。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="昆明老街 · 夜游">
+          <img src="https://loremflickr.com/1200/800/kunming,oldtown,china?lock=102" alt="昆明老街示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>昆明老街与南强街</h3><div class="tags"><span class="tag free">免费</span><span class="tag">夜间友好</span><span class="tag">美食集中</span></div><p>老建筑、商铺与餐饮集中，适合作为旅途第一晚。点餐前确认价格和份量，不要第一餐同时大量尝试生冷、辛辣和野生菌。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D2</div><div class="day-title"><h3>昆明：滇池海埂—西山；雨天改省博—官渡</h3><p>住宿：昆明原酒店，不换房</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">08:30</div><p>早餐后前往海埂大坝。两人以上可比较地铁换乘与网约车成本。</p></div>
+        <div class="time-row"><div class="time">09:30–11:00</div><p>海埂大坝看滇池与西山远景。8月通常没有冬季大规模海鸥景观。</p></div>
+        <div class="time-row"><div class="time">11:30–15:30</div><p>天气稳定时游西山龙门；雷雨、大风或低能见度时取消索道和高处步道。</p></div>
+        <div class="time-row"><div class="time">雨天替代</div><p>云南省博物馆—官渡古镇；室内项目需核对预约和闭馆日。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="滇池 · 海埂">
+          <img src="https://loremflickr.com/1200/800/dianchi,kunming,lake?lock=103" alt="昆明滇池示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>滇池海埂大坝</h3><div class="tags"><span class="tag free">免费</span><span class="tag">1–1.5小时</span></div><p>重点是开阔湖面和西山轮廓。上午一般更适合拍照；下午雨云可能增多。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="西山龙门 · 山地景观">
+          <img src="https://loremflickr.com/1200/800/kunming,mountain,temple?lock=104" alt="昆明西山示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>西山风景区</h3><div class="tags"><span class="tag book">购票项目</span><span class="tag risk">雷雨取消高处项目</span></div><p>台阶较多，鞋底需防滑。8月云雾可能遮挡滇池全景；不要为了完成项目在雷雨中乘索道。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D3</div><div class="day-title"><h3>昆明动车到大理：入住古城外围—大理古城</h3><p>住宿：大理古城南门外 / 东门附近</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">上午</div><p>昆明站或昆明南站乘动车到大理站。确认具体出发站，不要默认所有车都从昆明南开。</p></div>
+        <div class="time-row"><div class="time">抵达后</div><p>大理站位于下关，与大理古城不是同一区域。乘公交、旅游专线或网约车至酒店，先放行李。</p></div>
+        <div class="time-row"><div class="time">15:30–18:30</div><p>南门—复兴路—五华楼—人民路—洋人街外围；保留休息与喝咖啡时间。</p></div>
+        <div class="time-row"><div class="time">晚餐</div><p>白族家常菜、酸辣鱼或砂锅鱼；不熟悉菌类时只在正规餐馆吃充分加热的菌菇。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="大理古城 · 苍山脚下">
+          <img src="https://loremflickr.com/1200/800/dali,oldtown,yunnan?lock=105" alt="大理古城示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>大理古城</h3><div class="tags"><span class="tag free">古城街区免费</span><span class="tag">2–3小时</span></div><p>自由行优势最明显的区域：可随时停留、吃饭和返回酒店。避免在没有专业鉴别能力时购买高价银器、玉石、药材和茶叶。</p><p><strong>住宿提醒：</strong>不要只看“距古城300米”，还要查看坡度、石板路、车辆下客点和是否临近酒吧。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D4</div><div class="day-title"><h3>洱海西岸生态廊道—喜洲古镇</h3><p>住宿：大理古城原酒店</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">07:30–08:30</div><p>前往龙龛码头或才村。若当日持续降雨，直接把骑行改为喜洲古镇与古城室内休息。</p></div>
+        <div class="time-row"><div class="time">08:30–11:30</div><p>生态廊道短段骑行，建议总骑行控制在10–20公里内，根据体力随时折返。</p></div>
+        <div class="time-row"><div class="time">12:00–13:00</div><p>从合适出口返回主路，公交或网约车前往喜洲；下雨时叫车等待时间会增加。</p></div>
+        <div class="time-row"><div class="time">13:00–17:00</div><p>喜洲古镇、四方街、白族民居街巷及开放道路旁的田园景观。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="洱海生态廊道">
+          <img src="https://loremflickr.com/1200/800/erhai,lake,bicycle?lock=106" alt="洱海生态廊道示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>洱海生态廊道</h3><div class="tags"><span class="tag free">公共廊道</span><span class="tag risk">雨后湿滑</span><span class="tag">短段骑行</span></div><p>不建议无车条件下一天强行环洱海。龙龛—才村附近选择一段即可；骑行时不要边骑边拍照，也不要进入限制机动车区域叫车。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="喜洲古镇 · 白族民居">
+          <img src="https://loremflickr.com/1200/800/xizhou,dali,village?lock=107" alt="喜洲古镇示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>喜洲古镇</h3><div class="tags"><span class="tag free">古镇街区免费</span><span class="tag">白族建筑</span></div><p>适合午后慢游。田地属于生产区域，只在道路与开放位置拍照，不踩田、不翻越围栏。</p><p><strong>必尝：</strong>喜洲粑粑（甜/咸）、乳扇、白族凉鸡米线。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D5</div><div class="day-title"><h3>大理动车到丽江：入住古城外围—束河—丽江古城</h3><p>住宿：丽江古城北门 / 南门 / 忠义市场外围</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">上午</div><p>从大理古城前往大理站需充分预留堵车和进站时间。动车到丽江站后再前往酒店。</p></div>
+        <div class="time-row"><div class="time">14:30–17:30</div><p>束河古镇：青龙桥、九鼎龙潭与安静街巷。</p></div>
+        <div class="time-row"><div class="time">18:30–21:00</div><p>丽江古城：大水车—四方街外围—木府周边—忠义市场。雨天石板路很滑。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="束河古镇">
+          <img src="https://loremflickr.com/1200/800/shuhe,lijiang,oldtown?lock=108" alt="束河古镇示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>束河古镇</h3><div class="tags"><span class="tag free">街区自由游</span><span class="tag">较安静</span></div><p>比大研古城整体松弛，适合刚到丽江的下午。网约车上下客点与古镇入口可能有步行距离。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="丽江古城 · 大研">
+          <img src="https://loremflickr.com/1200/800/lijiang,oldtown,night?lock=109" alt="丽江古城示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>丽江古城</h3><div class="tags"><span class="tag free">古城街区免费</span><span class="tag risk">石板路湿滑</span></div><p>不要把大行李拖进古城深处。订房时优先选择车辆能接近、坡度小、距离集合点方便的位置。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D6</div><div class="day-title"><h3>玉龙雪山—冰川公园/云杉坪—蓝月谷</h3><p>住宿：丽江原酒店；这是全程预约要求最高的一天</p></div></div>
+    <div class="day-content">
+      <div class="callout gold"><strong>先有索道票，再确定当天路线。</strong>“买到景区门票”不等于“买到冰川公园大索道”。核对预约时段并提前到达，索道可能因大风、雷电、检修或天气停运。</div>
+      <div class="timeline" style="margin-top:22px">
+        <div class="time-row"><div class="time">06:30–07:30</div><p>起床、早餐，按索道预约时间倒推乘坐官方直通车或101路等正规交通。</p></div>
+        <div class="time-row"><div class="time">09:00–12:00</div><p>冰川公园大索道；未抢到时改云杉坪/牦牛坪，不建议从非官方渠道购买高价不明票。</p></div>
+        <div class="time-row"><div class="time">12:30–15:30</div><p>蓝月谷与景区交通。高海拔区域慢走，不跑跳，不为了拍照强行爬升。</p></div>
+        <div class="time-row"><div class="time">16:00–18:00</div><p>返回丽江。晚上只安排轻松晚餐和休息。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="玉龙雪山">
+          <img src="https://loremflickr.com/1200/800/jade-dragon-snow-mountain,lijiang?lock=110" alt="玉龙雪山示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>玉龙雪山</h3><div class="tags"><span class="tag book">实名预约</span><span class="tag risk">高海拔</span><span class="tag risk">天气停运</span></div><p>冰川公园区域海拔高，身体反应个体差异大。出现明显持续头痛、胸闷、恶心、走路不稳或症状加重，应停止上升并向工作人员求助。</p><p><strong>携带：</strong>身份证、薄保暖层、防风防雨外套、墨镜、防晒、手套可选、水和少量零食。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="蓝月谷">
+          <img src="https://loremflickr.com/1200/800/blue-moon-valley,yunnan?lock=111" alt="蓝月谷示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>蓝月谷</h3><div class="tags"><span class="tag">2–3小时</span><span class="tag">景交车衔接</span></div><p>雨后水色、光线和能见度会变化。沿开放栈道慢走，不跨越护栏接近水边。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D7</div><div class="day-title"><h3>丽江机动日：白沙—黑龙潭—木府</h3><p>若D6雪山因天气取消，则今天与D6互换</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">08:30–10:30</div><p>天气晴朗时去黑龙潭；云量大时也可晚些出发。</p></div>
+        <div class="time-row"><div class="time">11:00–13:00</div><p>木府及古城南部；查看开放时间和门票。</p></div>
+        <div class="time-row"><div class="time">14:30–17:30</div><p>公交或网约车去白沙古镇，体验相对安静的街巷与壁画相关区域。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="白沙古镇">
+          <img src="https://loremflickr.com/1200/800/baisha,lijiang,village?lock=112" alt="白沙古镇示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>白沙古镇</h3><div class="tags"><span class="tag free">街区免费</span><span class="tag">慢游</span></div><p>比丽江古城核心区安静，适合雪山机动日。若参观壁画或特定院落，需按现场规定购票和拍摄。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="黑龙潭 · 雪山远景">
+          <img src="https://loremflickr.com/1200/800/black-dragon-pool,lijiang?lock=113" alt="丽江黑龙潭示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>黑龙潭公园</h3><div class="tags"><span class="tag">晨间较佳</span><span class="tag">看天气</span></div><p>能否拍到清晰雪山取决于云量。把它当作城市公园散步，不要把“雪山倒影”视为必然。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D8</div><div class="day-title"><h3>丽江动车到香格里拉：独克宗古城轻松适应</h3><p>住宿：独克宗古城北门 / 东门 / 月光广场外围</p></div></div>
+    <div class="day-content">
+      <div class="callout warn"><strong>默认方案：动车直达香格里拉。</strong>虎跳峡不作为强制转场项目。仅当前一日确认天气稳定、景区开放、道路正常并有正规交通时，才考虑改为“上虎跳—香格里拉”。</div>
+      <div class="timeline" style="margin-top:22px">
+        <div class="time-row"><div class="time">上午/中午</div><p>乘动车到香格里拉站，避免雨季公路长时间转场。</p></div>
+        <div class="time-row"><div class="time">抵达后</div><p>入住古城外围酒店。第一天海拔上升明显，不安排普达措、长距离徒步或密集爬坡。</p></div>
+        <div class="time-row"><div class="time">17:00–20:00</div><p>月光广场—独克宗古城平缓街巷。龟山台阶量力而行，不追求快速登顶。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="独克宗古城">
+          <img src="https://loremflickr.com/1200/800/dukezong,shangri-la,oldtown?lock=114" alt="独克宗古城示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>独克宗古城</h3><div class="tags"><span class="tag free">街区免费</span><span class="tag risk">海拔约3200米级</span></div><p>第一晚以慢走和早睡为主。不要大量饮酒、暴饮暴食或洗过久热水澡；室内外温差大，及时加衣。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="虎跳峡 · 仅天气稳定时">
+          <img src="https://loremflickr.com/1200/800/tiger-leaping-gorge,yunnan?lock=115" alt="虎跳峡示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>虎跳峡（可选，不锁死）</h3><div class="tags"><span class="tag risk">雨季高风险</span><span class="tag book">前一天确认</span><span class="tag">只选上虎跳</span></div><p>任何暴雨、连续降雨、地质灾害风险或道路管制信号都应取消。不要拖行李进入中虎跳，不参加来源不明的临时拼车和徒步线路。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D9</div><div class="day-title"><h3>普达措国家公园：整日高原自然景观</h3><p>住宿：香格里拉原酒店</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">07:30–08:30</div><p>在指定地点乘官方/正规直通车。确认返程时间、上车点和是否含景区内部交通。</p></div>
+        <div class="time-row"><div class="time">09:00–15:00</div><p>根据当天开放区域乘景交车并选择精华步道，不必把每一段全走完。</p></div>
+        <div class="time-row"><div class="time">16:00–17:30</div><p>返回香格里拉城区。不要在同日晚间安排必须赶上的长途动车。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="普达措国家公园">
+          <img src="https://loremflickr.com/1200/800/potatso,pudacuo,yunnan?lock=116" alt="普达措国家公园示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>普达措国家公园</h3><div class="tags"><span class="tag book">门票＋直通车</span><span class="tag risk">高原与雨冷</span><span class="tag">景交车＋步行</span></div><p>8月植被通常较好，但雾、阵雨和低温都可能出现。防雨外套比普通雨伞更实用；不追逐或投喂野生动物。</p><p><strong>建议：</strong>轻便小背包、保温水、能量零食、备用袜子、防晒和雨衣。</p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="day">
+    <div class="day-head"><div class="day-no">D10</div><div class="day-title"><h3>松赞林寺—返回昆明</h3><p>建议下午较晚动车；时间不足时删减纳帕海</p></div></div>
+    <div class="day-content">
+      <div class="timeline">
+        <div class="time-row"><div class="time">08:30–11:30</div><p>公交、景区交通或网约车前往松赞林寺。殿堂内是否拍照以现场提示为准。</p></div>
+        <div class="time-row"><div class="time">12:00–13:30</div><p>返回城区午餐、取行李。</p></div>
+        <div class="time-row"><div class="time">可选</div><p>若返程车次很晚且身体状态好，可短途看纳帕海固定观景点；不要为了“环湖完整”耽误动车。</p></div>
+        <div class="time-row"><div class="time">下午/傍晚</div><p>香格里拉站乘动车返回昆明。若第二天还有航班，建议昆明再住一晚，避免长途铁路与航班同日极限衔接。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="松赞林寺">
+          <img src="https://loremflickr.com/1200/800/songzanlin,monastery,shangri-la?lock=117" alt="松赞林寺示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>松赞林寺</h3><div class="tags"><span class="tag book">按规定购票</span><span class="tag risk">台阶与高海拔</span></div><p>尊重宗教场所秩序：不触摸佛像、壁画和法器，不近距离拍摄礼佛者；殿堂内拍摄遵守现场标识。台阶较多，慢走并随时休息。</p></div>
+      </div>
+
+      <div class="spot">
+        <div class="spot-photo" data-caption="纳帕海 · 雨季湿地">
+          <img src="https://loremflickr.com/1200/800/napa-hai,shangri-la,wetland?lock=118" alt="纳帕海示意图" onerror="this.style.display='none'">
+        </div>
+        <div class="spot-body"><h3>纳帕海（可选）</h3><div class="tags"><span class="tag">固定观景点</span><span class="tag risk">积水与揽客</span></div><p>雨季水域更明显，但部分环湖道路可能积水。警惕“免费接送后绑定骑马/旅拍”的揽客，所有项目先确认总价、时长和附加费。</p></div>
+      </div>
+    </div>
+  </article>
+</div>
+</section>
+
+<section id="food">
+  <div class="wrap">
+    <h2>沿途特色美食与点餐建议</h2>
+    <div class="grid grid-2">
+      <article class="card"><div class="card-body"><h3>昆明</h3><ul class="food-list"><li><strong>小锅米线：</strong>适合第一餐，口味可调整。</li><li><strong>汽锅鸡：</strong>多人分食更合适。</li><li><strong>烧饵块 / 饵丝：</strong>早餐或小吃。</li><li><strong>野生菌：</strong>只在正规餐馆食用彻底加热的菌类，不自行购买陌生菌烹饪。</li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>大理</h3><ul class="food-list"><li><strong>喜洲粑粑：</strong>甜、咸两种，可两人分食。</li><li><strong>乳扇：</strong>奶香明显，肠胃敏感者少量尝试。</li><li><strong>白族凉鸡米线：</strong>注意生冷与辣度。</li><li><strong>酸辣鱼 / 砂锅鱼：</strong>点餐前确认鱼的计价方式和总价。</li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>丽江</h3><ul class="food-list"><li><strong>腊排骨火锅：</strong>盐分偏高，适合多人。</li><li><strong>鸡豆凉粉：</strong>小吃型，注意凉食。</li><li><strong>纳西烤肉：</strong>搭配蔬菜，避免连续重油。</li><li><strong>丽江粑粑：</strong>适合作为加餐。</li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>香格里拉</h3><ul class="food-list"><li><strong>牦牛肉火锅：</strong>高原第一晚不要过量。</li><li><strong>青稞饼：</strong>适合早餐或加餐。</li><li><strong>酥油茶：</strong>口味和油脂感强，可先点小份。</li><li><strong>藏式土锅：</strong>注意盐分、油脂和份量。</li></ul></div></article>
+    </div>
+    <div class="callout" style="margin-top:22px"><strong>点餐通用原则：</strong>先看菜单、重量单位和是否按“斤/条/份”计价；古城核心区不要接受无菜单口头报价。高海拔阶段减少酒精、重油和暴饮暴食。</div>
+  </div>
+</section>
+
+<section id="hotel">
+  <div class="wrap">
+    <h2>住宿区域与订房筛选条件</h2>
+    <div style="overflow:auto">
+      <table>
+        <thead><tr><th>城市</th><th>首选区域</th><th>优势</th><th>避开</th></tr></thead>
+        <tbody>
+          <tr><td>昆明</td><td>东风广场、南屏街、昆明老街</td><td>地铁与餐饮方便，夜间可步行</td><td>仅因为便宜住昆明南站远郊</td></tr>
+          <tr><td>大理</td><td>古城南门外、东门附近</td><td>车辆较易到达，兼顾古城和洱海交通</td><td>古城深处、酒吧楼上、长石板坡路</td></tr>
+          <tr><td>丽江</td><td>古城北门、南门、忠义市场外围</td><td>去车站、雪山集合点和古镇方便</td><td>古城山坡深处、车辆无法接近的位置</td></tr>
+          <tr><td>香格里拉</td><td>独克宗北门/东门、月光广场外围</td><td>步行进古城，去车站与景点接驳方便</td><td>偏远且无供暖、无接送的民宿</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 style="margin-top:26px">订房页面必须检查</h3>
+    <ul class="checklist">
+      <li><label><input type="checkbox">出租车或网约车能否到门口，最后需要步行多少米、是否有台阶或上坡。</label></li>
+      <li><label><input type="checkbox">是否有电梯；无电梯时能否帮助搬运行李。</label></li>
+      <li><label><input type="checkbox">8月雨天热水是否稳定；香格里拉房间是否有供暖、电热毯或空调制热。</label></li>
+      <li><label><input type="checkbox">是否临近酒吧、夜市、施工区域或主干道。</label></li>
+      <li><label><input type="checkbox">取消政策是否足够灵活，特别是丽江和香格里拉雨季日期。</label></li>
+      <li><label><input type="checkbox">酒店能否提供车站接送，收费多少，接送时间是否覆盖所选车次。</label></li>
+    </ul>
+  </div>
+</section>
+
+<section id="packing">
+  <div class="wrap">
+    <h2>出发前准备与行李清单</h2>
+    <div class="grid grid-3">
+      <article class="card"><div class="card-body"><h3>证件与电子</h3><ul class="checklist"><li><label><input type="checkbox">身份证原件</label></li><li><label><input type="checkbox">手机、充电器、充电宝</label></li><li><label><input type="checkbox">12306、地图、支付软件</label></li><li><label><input type="checkbox">订单截图和酒店电话</label></li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>衣物</h3><ul class="checklist"><li><label><input type="checkbox">短袖/速干内层</label></li><li><label><input type="checkbox">薄抓绒或轻保暖层</label></li><li><label><input type="checkbox">防风防雨外套</label></li><li><label><input type="checkbox">防滑运动鞋</label></li><li><label><input type="checkbox">备用袜子2双以上</label></li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>防晒与雨季</h3><ul class="checklist"><li><label><input type="checkbox">防晒霜、墨镜、帽子</label></li><li><label><input type="checkbox">轻便雨衣</label></li><li><label><input type="checkbox">行李防雨罩/防水袋</label></li><li><label><input type="checkbox">润唇膏与保湿用品</label></li><li><label><input type="checkbox">小毛巾/纸巾</label></li></ul></div></article>
+    </div>
+    <div class="callout gold" style="margin-top:22px"><strong>行李体积：</strong>建议20–24英寸行李箱＋轻便日用背包。全程换四座城市，超大箱会明显增加古城石板路、车站换乘和雨天搬运难度。</div>
+  </div>
+</section>
+
+<section id="weather">
+  <div class="wrap">
+    <h2>2026年8月初雨季与高原应对</h2>
+    <div class="grid grid-2">
+      <article class="card"><div class="card-body"><h3>天气决策</h3><p>不能只看“城市天气小雨”。山区可能出现局部雷雨、短时强降水、落石或道路临时管制。每天晚上同时核对：</p><ul><li>次日逐小时降雨和雷电；</li><li>云南/当地气象部门预警；</li><li>地质灾害气象风险；</li><li>景区和索道官方公告；</li><li>铁路与道路运行信息。</li></ul></div></article>
+      <article class="card"><div class="card-body"><h3>高原节奏</h3><p>昆明、大理、丽江到香格里拉海拔逐步升高。抵达香格里拉首日应慢走、早睡、适量饮水、注意保暖，避免跑跳、熬夜和大量饮酒。</p><p>身体不适持续或加重时，不要硬撑；及时停止上升并寻求景区工作人员或医疗帮助。</p></div></article>
+    </div>
+    <div class="callout warn" style="margin-top:22px"><strong>必须取消虎跳峡的信号：</strong>景区关闭/部分关闭、暴雨或雷电预警、滑坡泥石流风险预警、过去24小时持续强降雨、道路管制、正规客运方明确不建议前往、无法确认后续正规交通。</div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="wrap">
+    <h2>预算框架（每人，不含抵达昆明的大交通）</h2>
+    <div style="overflow:auto">
+      <table>
+        <thead><tr><th>项目</th><th>经济舒适型参考</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>住宿9晚</td><td>约1800–3600元</td><td>8月暑期波动大；单人住一间会更高。</td></tr>
+          <tr><td>城际铁路</td><td>约500–900元</td><td>取决于车次和席别。</td></tr>
+          <tr><td>市内交通与直通车</td><td>约500–1000元</td><td>两人分摊网约车更划算。</td></tr>
+          <tr><td>景区票与索道</td><td>约900–1600元</td><td>玉龙雪山票项、普达措交通和可选项目影响最大。</td></tr>
+          <tr><td>餐饮</td><td>约900–1500元</td><td>古城核心区、火锅和鱼类会提高预算。</td></tr>
+          <tr><td><strong>合计</strong></td><td><strong>约4600–8600元/人</strong></td><td>为规划区间，不是实时价格。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap">
+    <h2>出发前核验渠道</h2>
+    <p class="lead">本页面用于行程组织，不替代出行当天公告。建议通过以下官方或权威渠道完成最终核验：</p>
+    <ul>
+      <li><strong>铁路：</strong>中国铁路12306 App/网站，核对车站、车次、候补和退改。</li>
+      <li><strong>云南景区预约：</strong>“游云南”相关官方平台、景区官方公众号/小程序。</li>
+      <li><strong>玉龙雪山：</strong>景区官方票务信息，分别核对进山、环保车与索道。</li>
+      <li><strong>天气与风险：</strong>中央气象台、云南省气象部门、当地预警、云南交通运输部门。</li>
+      <li><strong>虎跳峡/普达措：</strong>景区官方公告与正规客运平台，前一天再次确认开放和接驳。</li>
+    </ul>
+    <p class="footnotes">图片通过网络动态图片服务加载，作为目的地视觉示意；打开页面需联网。若某张图加载失败，页面文字与行程仍可正常使用。页面版本：2026-07-23。</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>推荐执行方式：</strong>80%完全自由行 + 20%景区交通接驳。不要购买含购物、车销、强制自费或票项描述模糊的低价产品。
+  </div>
+</footer>
+</body>
+</html>
